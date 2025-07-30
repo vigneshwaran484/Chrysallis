@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(237, 69%, 32%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Custom colors for Crisalys theme */
+  --navy-900: hsl(237, 69%, 17%);
+  --navy-800: hsl(237, 58%, 25%);
+  --navy-700: hsl(237, 52%, 33%);
+  --gold-400: hsl(51, 100%, 50%);
+  --gold-500: hsl(45, 100%, 50%);
+  --gold-600: hsl(39, 100%, 50%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(237, 69%, 32%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .navy-900 {
+    background-color: var(--navy-900);
+  }
+  
+  .navy-800 {
+    background-color: var(--navy-800);
+  }
+  
+  .navy-700 {
+    background-color: var(--navy-700);
+  }
+  
+  .text-navy-900 {
+    color: var(--navy-900);
+  }
+  
+  .text-navy-800 {
+    color: var(--navy-800);
+  }
+  
+  .text-navy-700 {
+    color: var(--navy-700);
+  }
+  
+  .gold-400 {
+    background-color: var(--gold-400);
+  }
+  
+  .gold-500 {
+    background-color: var(--gold-500);
+  }
+  
+  .gold-600 {
+    background-color: var(--gold-600);
+  }
+  
+  .text-gold-400 {
+    color: var(--gold-400);
+  }
+  
+  .text-gold-500 {
+    color: var(--gold-500);
+  }
+  
+  .text-gold-600 {
+    color: var(--gold-600);
+  }
+  
+  .border-gold-400 {
+    border-color: var(--gold-400);
+  }
+  
+  .border-navy-900 {
+    border-color: var(--navy-900);
+  }
+  
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+}
