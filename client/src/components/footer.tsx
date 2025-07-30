@@ -9,28 +9,28 @@ export default function Footer() {
   };
 
   return (
-    <footer className="navy-900 text-white py-12">
+    <footer className="purple-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="mb-4">
-              <div className="text-gold-400 font-playfair font-bold text-2xl">Crisalys 2024</div>
-              <div className="text-gray-300">St. Joseph's College Literary Symposium</div>
+              <div className="text-cyan-400 font-playfair font-bold text-2xl">CRISALYS 2024</div>
+              <div className="text-gray-300">A National Level Technical Symposium</div>
             </div>
             <p className="text-gray-400 mb-4">
               A premier literary symposium celebrating creativity, innovation, and intellectual excellence in academic discourse.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-gold-400 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-gold-400 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Twitter className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-gold-400 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-gold-400 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
             </div>

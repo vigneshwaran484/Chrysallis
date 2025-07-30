@@ -24,13 +24,14 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
   
-  /* Custom colors for Crisalys theme */
-  --navy-900: hsl(237, 69%, 17%);
-  --navy-800: hsl(237, 58%, 25%);
-  --navy-700: hsl(237, 52%, 33%);
-  --gold-400: hsl(51, 100%, 50%);
-  --gold-500: hsl(45, 100%, 50%);
-  --gold-600: hsl(39, 100%, 50%);
+  /* Custom colors for Crisalys theme - Updated to match logo */
+  --purple-900: hsl(259, 46%, 26%);
+  --purple-800: hsl(259, 46%, 35%);
+  --purple-700: hsl(259, 46%, 45%);
+  --purple-600: hsl(259, 46%, 55%);
+  --cyan-400: hsl(184, 100%, 50%);
+  --cyan-500: hsl(184, 80%, 45%);
+  --cyan-600: hsl(184, 70%, 40%);
 }
 
 .dark {
@@ -67,60 +68,68 @@
 }
 
 @layer utilities {
-  .navy-900 {
-    background-color: var(--navy-900);
+  .purple-900 {
+    background-color: var(--purple-900);
   }
   
-  .navy-800 {
-    background-color: var(--navy-800);
+  .purple-800 {
+    background-color: var(--purple-800);
   }
   
-  .navy-700 {
-    background-color: var(--navy-700);
+  .purple-700 {
+    background-color: var(--purple-700);
   }
   
-  .text-navy-900 {
-    color: var(--navy-900);
+  .purple-600 {
+    background-color: var(--purple-600);
   }
   
-  .text-navy-800 {
-    color: var(--navy-800);
+  .text-purple-900 {
+    color: var(--purple-900);
   }
   
-  .text-navy-700 {
-    color: var(--navy-700);
+  .text-purple-800 {
+    color: var(--purple-800);
   }
   
-  .gold-400 {
-    background-color: var(--gold-400);
+  .text-purple-700 {
+    color: var(--purple-700);
   }
   
-  .gold-500 {
-    background-color: var(--gold-500);
+  .text-purple-600 {
+    color: var(--purple-600);
   }
   
-  .gold-600 {
-    background-color: var(--gold-600);
+  .cyan-400 {
+    background-color: var(--cyan-400);
   }
   
-  .text-gold-400 {
-    color: var(--gold-400);
+  .cyan-500 {
+    background-color: var(--cyan-500);
   }
   
-  .text-gold-500 {
-    color: var(--gold-500);
+  .cyan-600 {
+    background-color: var(--cyan-600);
   }
   
-  .text-gold-600 {
-    color: var(--gold-600);
+  .text-cyan-400 {
+    color: var(--cyan-400);
   }
   
-  .border-gold-400 {
-    border-color: var(--gold-400);
+  .text-cyan-500 {
+    color: var(--cyan-500);
   }
   
-  .border-navy-900 {
-    border-color: var(--navy-900);
+  .text-cyan-600 {
+    color: var(--cyan-600);
+  }
+  
+  .border-cyan-400 {
+    border-color: var(--cyan-400);
+  }
+  
+  .border-purple-900 {
+    border-color: var(--purple-900);
   }
   
   .font-playfair {

@@ -62,7 +62,7 @@ export default function ContactSection() {
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy-900 mb-4">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-purple-900 mb-4">
             Contact & Venue
           </h2>
           <p className="text-lg text-gray-600">
@@ -75,15 +75,15 @@ export default function ContactSection() {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle className="font-playfair text-2xl text-navy-900">Event Coordinators</CardTitle>
+                <CardTitle className="font-playfair text-2xl text-purple-900">Event Coordinators</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="flex items-start">
-                  <div className="gold-400 rounded-full p-3 mr-4">
-                    <User className="text-navy-900 w-5 h-5" />
+                  <div className="cyan-400 rounded-full p-3 mr-4">
+                    <User className="text-purple-900 w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-navy-900">Dr. Sarah Johnson</h4>
+                    <h4 className="font-semibold text-purple-900">Dr. Sarah Johnson</h4>
                     <p className="text-gray-600">Department Head, English Literature</p>
                     <p className="text-gray-600 flex items-center mt-1">
                       <Mail className="w-4 h-4 mr-2" />
@@ -96,11 +96,11 @@ export default function ContactSection() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="gold-400 rounded-full p-3 mr-4">
-                    <User className="text-navy-900 w-5 h-5" />
+                  <div className="cyan-400 rounded-full p-3 mr-4">
+                    <User className="text-purple-900 w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-navy-900">Prof. Michael Chen</h4>
+                    <h4 className="font-semibold text-purple-900">Prof. Michael Chen</h4>
                     <p className="text-gray-600">Event Coordinator</p>
                     <p className="text-gray-600 flex items-center mt-1">
                       <Mail className="w-4 h-4 mr-2" />
@@ -117,27 +117,27 @@ export default function ContactSection() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="font-playfair text-2xl text-navy-900">Venue Information</CardTitle>
+                <CardTitle className="font-playfair text-2xl text-purple-900">Venue Information</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start">
-                  <MapPin className="text-gold-400 mt-1 mr-3 w-5 h-5" />
+                  <MapPin className="text-cyan-400 mt-1 mr-3 w-5 h-5" />
                   <div>
-                    <h4 className="font-semibold text-navy-900">St. Joseph's College</h4>
+                    <h4 className="font-semibold text-purple-900">St. Joseph's College</h4>
                     <p className="text-gray-600">123 Academic Drive<br />Literature Campus<br />University City, UC 12345</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Clock className="text-gold-400 mt-1 mr-3 w-5 h-5" />
+                  <Clock className="text-cyan-400 mt-1 mr-3 w-5 h-5" />
                   <div>
-                    <h4 className="font-semibold text-navy-900">Event Timing</h4>
+                    <h4 className="font-semibold text-purple-900">Event Timing</h4>
                     <p className="text-gray-600">March 15-16, 2024<br />9:00 AM - 6:00 PM both days</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Car className="text-gold-400 mt-1 mr-3 w-5 h-5" />
+                  <Car className="text-cyan-400 mt-1 mr-3 w-5 h-5" />
                   <div>
-                    <h4 className="font-semibold text-navy-900">Facilities</h4>
+                    <h4 className="font-semibold text-purple-900">Facilities</h4>
                     <p className="text-gray-600">Free parking available<br />Cafeteria and refreshments<br />WiFi access throughout campus</p>
                   </div>
                 </div>

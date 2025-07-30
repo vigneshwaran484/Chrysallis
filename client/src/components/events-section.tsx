@@ -35,7 +35,7 @@ export default function EventsSection() {
     <section id="events" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy-900 mb-4">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-purple-900 mb-4">
             Literary Competitions
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -50,8 +50,8 @@ export default function EventsSection() {
             variant={activeFilter === "all" ? "default" : "outline"}
             className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
               activeFilter === "all" 
-                ? "navy-900 text-white" 
-                : "border-gray-300 text-gray-700 hover:navy-900 hover:text-white"
+                ? "purple-900 text-white" 
+                : "border-gray-300 text-gray-700 hover:purple-900 hover:text-white"
             }`}
           >
             All Events
@@ -61,8 +61,8 @@ export default function EventsSection() {
             variant={activeFilter === "performance" ? "default" : "outline"}
             className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
               activeFilter === "performance" 
-                ? "navy-900 text-white" 
-                : "border-gray-300 text-gray-700 hover:navy-900 hover:text-white"
+                ? "purple-900 text-white" 
+                : "border-gray-300 text-gray-700 hover:purple-900 hover:text-white"
             }`}
           >
             Performance
@@ -72,8 +72,8 @@ export default function EventsSection() {
             variant={activeFilter === "verbal" ? "default" : "outline"}
             className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
               activeFilter === "verbal" 
-                ? "navy-900 text-white" 
-                : "border-gray-300 text-gray-700 hover:navy-900 hover:text-white"
+                ? "purple-900 text-white" 
+                : "border-gray-300 text-gray-700 hover:purple-900 hover:text-white"
             }`}
           >
             Verbal Arts
@@ -83,8 +83,8 @@ export default function EventsSection() {
             variant={activeFilter === "creative" ? "default" : "outline"}
             className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
               activeFilter === "creative" 
-                ? "navy-900 text-white" 
-                : "border-gray-300 text-gray-700 hover:navy-900 hover:text-white"
+                ? "purple-900 text-white" 
+                : "border-gray-300 text-gray-700 hover:purple-900 hover:text-white"
             }`}
           >
             Creative

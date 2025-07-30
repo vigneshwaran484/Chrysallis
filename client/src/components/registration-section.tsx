@@ -58,13 +58,13 @@ export default function RegistrationSection() {
     mutationFn: async (data: RegistrationForm & { collegeId?: File }) => {
       const formData = new FormData();
       
-      // Append all form data
+      // Append all form data (excluding validation fields)
       Object.entries(data).forEach(([key, value]) => {
         if (key === 'events') {
           formData.append(key, JSON.stringify(value));
         } else if (key === 'teamMembers' && value) {
           formData.append(key, value);
-        } else if (key !== 'collegeId') {
+        } else if (key !== 'collegeId' && key !== 'botVerification' && key !== 'termsAccepted' && value !== undefined) {
           formData.append(key, String(value));
         }
       });
@@ -154,7 +154,7 @@ export default function RegistrationSection() {
     <section id="registration" className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy-900 mb-4">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-purple-900 mb-4">
             Registration
           </h2>
           <p className="text-lg text-gray-600">
@@ -164,7 +164,7 @@ export default function RegistrationSection() {
 
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl text-navy-900">Register for Crisalys 2024</CardTitle>
+            <CardTitle className="text-2xl text-purple-900">Register for Crisalys 2024</CardTitle>
           </CardHeader>
           <CardContent>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">

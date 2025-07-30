@@ -14,14 +14,19 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-navy-900 text-white shadow-lg">
+    <nav className="fixed w-full top-0 z-50 bg-purple-900 text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
+            <img 
+              src="/attached_assets/Screenshot 2025-07-29 173156_1753847577176.png" 
+              alt="Crisalys Logo" 
+              className="h-12 w-auto mr-3"
+            />
             <div className="flex-shrink-0">
-              <div className="text-gold-400 font-playfair font-bold text-xl">
-                St. Joseph's College
+              <div className="text-cyan-400 font-playfair font-bold text-xl">
+                CRISALYS
               </div>
               <div className="text-sm text-gray-300">Literary Symposium</div>
             </div>
@@ -32,31 +37,31 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-4">
               <button 
                 onClick={() => scrollToSection('home')}
-                className="hover:text-gold-400 px-3 py-2 text-sm font-medium transition-colors"
+                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('events')}
-                className="hover:text-gold-400 px-3 py-2 text-sm font-medium transition-colors"
+                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Events
               </button>
               <button 
                 onClick={() => scrollToSection('schedule')}
-                className="hover:text-gold-400 px-3 py-2 text-sm font-medium transition-colors"
+                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Schedule
               </button>
               <button 
                 onClick={() => scrollToSection('registration')}
-                className="hover:text-gold-400 px-3 py-2 text-sm font-medium transition-colors"
+                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Register
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="hover:text-gold-400 px-3 py-2 text-sm font-medium transition-colors"
+                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Contact
               </button>
@@ -79,35 +84,35 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-navy-800">
+        <div className="md:hidden bg-purple-800">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <button 
               onClick={() => scrollToSection('home')}
-              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-gold-400 transition-colors"
+              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-cyan-400 transition-colors"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('events')}
-              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-gold-400 transition-colors"
+              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-cyan-400 transition-colors"
             >
               Events
             </button>
             <button 
               onClick={() => scrollToSection('schedule')}
-              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-gold-400 transition-colors"
+              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-cyan-400 transition-colors"
             >
               Schedule
             </button>
             <button 
               onClick={() => scrollToSection('registration')}
-              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-gold-400 transition-colors"
+              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-cyan-400 transition-colors"
             >
               Register
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-gold-400 transition-colors"
+              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-cyan-400 transition-colors"
             >
               Contact
             </button>

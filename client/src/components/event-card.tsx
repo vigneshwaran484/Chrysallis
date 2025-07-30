@@ -9,7 +9,7 @@ interface EventCardProps {
 }
 
 const categoryColors = {
-  performance: "bg-gold-400 text-navy-900",
+  performance: "bg-cyan-400 text-purple-900",
   verbal: "bg-blue-100 text-blue-800",
   creative: "bg-purple-100 text-purple-800"
 };
@@ -41,7 +41,7 @@ export default function EventCard({ event }: EventCardProps) {
       />
       <div className="p-6">
         <div className="flex items-center justify-between mb-3">
-          <h3 className="font-playfair text-xl font-bold text-navy-900">{event.name}</h3>
+          <h3 className="font-playfair text-xl font-bold text-purple-900">{event.name}</h3>
           <Badge className={categoryColors[event.category]}>
             {event.category.charAt(0).toUpperCase() + event.category.slice(1)}
           </Badge>
@@ -69,14 +69,14 @@ export default function EventCard({ event }: EventCardProps) {
         <div className="flex gap-2 mb-4">
           <Button 
             onClick={scrollToRegistration}
-            className="navy-900 text-white hover:navy-800 flex-1"
+            className="purple-900 text-white hover:purple-800 flex-1"
           >
             Register
           </Button>
           <Button 
             onClick={() => setShowRules(!showRules)}
             variant="outline"
-            className="border-navy-900 text-navy-900 hover:navy-900 hover:text-white"
+            className="border-purple-900 text-purple-900 hover:purple-900 hover:text-white"
           >
             {showRules ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
             Rules
