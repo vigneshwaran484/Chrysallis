@@ -10,7 +10,6 @@ export default function EventsSection() {
     if (activeFilter === "all") return true;
     return event.category === activeFilter;
   });
-
   return (
     <section id="events" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
