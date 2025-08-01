@@ -58,8 +58,7 @@ export default function Footer() {
               <li>Department of English</li>
               <li>St. Joseph's College of Engineering</li>
               <li>OMR, Chennai-119</li>
-              <li>Phone: +91 9840731240 / +91 9176003005</li>
-              <li>Email: chrysalis25@gmail.com</li>
+              <li>Email: josephslinguasympochrisalys@gmail.com</li>
             </ul>
           </div>
         </div>
