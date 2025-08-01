@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(237, 69%, 32%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Custom colors for Crisalys theme - Updated to match logo */
+  --purple-900: hsl(259, 46%, 26%);
+  --purple-800: hsl(259, 46%, 35%);
+  --purple-700: hsl(259, 46%, 45%);
+  --purple-600: hsl(259, 46%, 55%);
+  --cyan-400: hsl(184, 100%, 50%);
+  --cyan-500: hsl(184, 80%, 45%);
+  --cyan-600: hsl(184, 70%, 40%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(237, 69%, 32%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .purple-900 {
+    background-color: var(--purple-900);
+  }
+  
+  .purple-800 {
+    background-color: var(--purple-800);
+  }
+  
+  .purple-700 {
+    background-color: var(--purple-700);
+  }
+  
+  .purple-600 {
+    background-color: var(--purple-600);
+  }
+  
+  .text-purple-900 {
+    color: var(--purple-900);
+  }
+  
+  .text-purple-800 {
+    color: var(--purple-800);
+  }
+  
+  .text-purple-700 {
+    color: var(--purple-700);
+  }
+  
+  .text-purple-600 {
+    color: var(--purple-600);
+  }
+  
+  .cyan-400 {
+    background-color: var(--cyan-400);
+  }
+  
+  .cyan-500 {
+    background-color: var(--cyan-500);
+  }
+  
+  .cyan-600 {
+    background-color: var(--cyan-600);
+  }
+  
+  .text-cyan-400 {
+    color: var(--cyan-400);
+  }
+  
+  .text-cyan-500 {
+    color: var(--cyan-500);
+  }
+  
+  .text-cyan-600 {
+    color: var(--cyan-600);
+  }
+  
+  .border-cyan-400 {
+    border-color: var(--cyan-400);
+  }
+  
+  .border-purple-900 {
+    border-color: var(--purple-900);
+  }
+  
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+}
