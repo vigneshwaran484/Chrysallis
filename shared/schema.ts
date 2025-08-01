@@ -167,7 +167,7 @@ export const events: Event[] = [
   },
   {
     id: "adzap",
-    name: "Adap",
+    name: "Adzap",
     category: "creative",
     description: "Products will be assigned on the spot. Participants must creatively market and sell them through a stage performance.",
     teamSize: "1–5 members",
