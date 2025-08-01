@@ -14,26 +14,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="mb-4">
-              <div className="text-cyan-400 font-playfair font-bold text-2xl">CRISALYS 2024</div>
+              <div className="text-cyan-400 font-playfair font-bold text-2xl">CHRYSALIS 2024</div>
               <div className="text-gray-300">A National Level Technical Symposium</div>
             </div>
             <p className="text-gray-400 mb-4">
               A premier literary symposium celebrating creativity, innovation, and intellectual excellence in academic discourse.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                <Facebook className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                <Twitter className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                <Instagram className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
-                <Linkedin className="w-6 h-6" />
-              </a>
-            </div>
           </div>
           
           <div>
@@ -57,22 +43,6 @@ export default function Footer() {
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('schedule')}
-                  className="text-gray-400 hover:text-gold-400 transition-colors"
-                >
-                  Schedule
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('registration')}
-                  className="text-gray-400 hover:text-gold-400 transition-colors"
-                >
-                  Registration
-                </button>
-              </li>
-              <li>
-                <button 
                   onClick={() => scrollToSection('contact')}
                   className="text-gray-400 hover:text-gold-400 transition-colors"
                 >
@@ -83,13 +53,13 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Events</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-gold-400 transition-colors">Dramatics</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gold-400 transition-colors">Debate</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gold-400 transition-colors">Verbal Correlations</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gold-400 transition-colors">AdSap</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gold-400 transition-colors">Decode</a></li>
+            <h4 className="font-semibold mb-4">CONTACT US</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>Department of English</li>
+              <li>St. Joseph's College of Engineering</li>
+              <li>OMR, Chennai-119</li>
+              <li>Phone: +91 9840731240 / +91 9176003005</li>
+              <li>Email: chrysalis25@gmail.com</li>
             </ul>
           </div>
         </div>

@@ -79,8 +79,6 @@ export interface Event {
   description: string;
   teamSize: string;
   duration: string;
-  date: string;
-  time: string;
   rules: string[];
   judgingCriteria: string[];
   disqualificationRules: string[];
@@ -91,11 +89,10 @@ export const events: Event[] = [
     id: "dramatics",
     name: "Dramatics",
     category: "performance",
-    description: "Showcase your theatrical talents through diverse performance formats including drama, comedy, and mime.",
-    teamSize: "Solo or 2-3 participants",
-    duration: "5-10 minutes",
-    date: "March 15, 2024",
-    time: "10:00 AM",
+    description: "Description: Present a skit with strong social relevance on themes like technology, unity, current events, or similar topics.",
+    teamSize: " Solo or 3-4 members",
+    duration: "3-7 minutes",
+    
     rules: [
       "Performance time: 5-10 minutes",
       "Props and costumes require organizer approval",
@@ -122,8 +119,7 @@ export const events: Event[] = [
     description: "Engage in intellectual discourse through structured debates with direct finals format.",
     teamSize: "Teams of 3 speakers",
     duration: "8 min + 4 min reply",
-    date: "March 15, 2024",
-    time: "2:00 PM",
+    
     rules: [
       "Direct finals format with two teams",
       "8 minutes per substantive speech",
@@ -150,8 +146,7 @@ export const events: Event[] = [
     description: "Demonstrate quick thinking by connecting words, phrases, and concepts with logical correlations.",
     teamSize: "Individual or pairs",
     duration: "1-2 minutes per response",
-    date: "March 16, 2024",
-    time: "10:00 AM",
+    
     rules: [
       "Connect given words/phrases logically",
       "1-2 minutes per response",
@@ -171,14 +166,13 @@ export const events: Event[] = [
     ]
   },
   {
-    id: "adsap",
-    name: "AdSap",
+    id: "adzap",
+    name: "Adap",
     category: "creative",
-    description: "Create compelling advertisements using creativity and presentation skills in various formats.",
-    teamSize: "2-4 participants",
-    duration: "2-3 minutes presentation",
-    date: "March 16, 2024",
-    time: "2:00 PM",
+    description: "Products will be assigned on the spot. Participants must creatively market and sell them through a stage performance.",
+    teamSize: "1–5 members",
+    duration: "30 seconds–3 minutes",
+    
     rules: [
       "15-30 minutes preparation time",
       "Original content only (no plagiarism)",
@@ -206,8 +200,7 @@ export const events: Event[] = [
     description: "Solve puzzles and decode encrypted messages using analytical thinking and problem-solving skills.",
     teamSize: "Individual or pairs",
     duration: "Time-limited rounds",
-    date: "March 16, 2024",
-    time: "4:00 PM",
+    
     rules: [
       "Decode clues and encrypted messages",
       "Submit answers within time limits",

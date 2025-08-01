@@ -15,10 +15,10 @@ const categoryColors = {
 };
 
 const eventImages = {
-  dramatics: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-  debate: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+  dramatics: "/attached_assets/dramatics.jpg",
+  debate: "/attached_assets/debate.avif",
   verbal: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-  adsap: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+  adzap: "/attached_assets/adzap.jpg",
   decode: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400"
 };
 
@@ -34,7 +34,7 @@ export default function EventCard({ event }: EventCardProps) {
 
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300">
-      <img 
+      <img
         src={eventImages[event.id as keyof typeof eventImages]} 
         alt={event.name}
         className="w-full h-48 object-cover"
@@ -60,20 +60,20 @@ export default function EventCard({ event }: EventCardProps) {
             <Clock className="w-4 h-4 mr-2" />
             <span>{event.duration}</span>
           </div>
-          <div className="flex items-center text-sm text-gray-500">
-            <Calendar className="w-4 h-4 mr-2" />
-            <span>{event.date}, {event.time}</span>
-          </div>
+          
         </div>
         
         <div className="flex gap-2 mb-4">
           <Button 
-            onClick={scrollToRegistration}
+            onClick={() => {
+            scrollToRegistration();
+            window.open('https://forms.gle/8z5N32ZfnqpbKF5v6', '_blank');
+  }}
             className="purple-900 text-white hover:purple-800 flex-1"
           >
             Register
           </Button>
-          <Button 
+          <Button
             onClick={() => setShowRules(!showRules)}
             variant="outline"
             className="border-purple-900 text-purple-900 hover:purple-900 hover:text-white"

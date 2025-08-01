@@ -14,21 +14,21 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-purple-900 text-white shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed w-full top-0 z-50 bg-Mauve-900 text-white shadow-lg bg-[rgba(203, 203, 191, 0.93)]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-gray-500 ">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/attached_assets/Screenshot 2025-07-29 173156_1753847577176.png" 
-              alt="Crisalys Logo" 
-              className="h-12 w-auto mr-3"
+              src="/attached_assets/final.png" 
+              alt="CHRYSALIS Logo" 
+              className="h-16 w-auto mr-3"
             />
             <div className="flex-shrink-0">
-              <div className="text-cyan-400 font-playfair font-bold text-xl">
-                CRISALYS
+              <div className="text-red-500 font-playfair font-bold text-xl">
+                CHRYSALIS
               </div>
-              <div className="text-sm text-gray-300">Literary Symposium</div>
+              <div className="text-sm text-red-800">Literary Symposium</div>
             </div>
           </div>
 
@@ -37,31 +37,17 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-4">
               <button 
                 onClick={() => scrollToSection('home')}
-                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors"
-              >
-                Home
-              </button>
+                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors text-red-800">Home</button>
               <button 
                 onClick={() => scrollToSection('events')}
-                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors"
+                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors text-red-800"
               >
                 Events
               </button>
-              <button 
-                onClick={() => scrollToSection('schedule')}
-                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors"
-              >
-                Schedule
-              </button>
-              <button 
-                onClick={() => scrollToSection('registration')}
-                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors"
-              >
-                Register
-              </button>
+             
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors"
+                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors text-red-800"
               >
                 Contact
               </button>
