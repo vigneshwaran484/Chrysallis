@@ -147,11 +147,11 @@ export default function EventInfoSection() {
                       <p className="text-lg text-cyan-600 font-semibold">9840353000</p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-lg">
-                      <p className="font-bold text-purple-900">Mr. Yeswanth</p>
+                      <p className="font-bold text-purple-900">Mr. S.Yashvanth</p>
                       <p className="text-lg text-cyan-600 font-semibold">9344480767</p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-lg">
-                      <p className="font-bold text-purple-900">Mr. C. Vigneswaran</p>
+                      <p className="font-bold text-purple-900">Mr. C.Vigneshwaran</p>
                       <p className="text-lg text-cyan-600 font-semibold">7845864838</p>
                     </div>
                   </div>
@@ -169,7 +169,7 @@ export default function EventInfoSection() {
                   <h4 className="font-semibold text-2xl text-purple-900 mb-4">Coordinators</h4>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="bg-gray-50 p-4 rounded-lg">
-                      <p className="font-bold text-purple-900">Dr. U.Venkateswara</p>
+                      <p className="font-bold text-purple-900">Dr. U.Venkateswar</p>
                       <p className="text-lg text-cyan-600 font-semibold">9840731240</p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-lg">
