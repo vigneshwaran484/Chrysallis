@@ -26,7 +26,9 @@ export default function EventInfoSection() {
                 SATURDAY, <span className="text-cyan-400">30th</span> AUGUST 2025
               </p>
             </div>
-            <button className="bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-4 px-12 rounded-full text-xl shadow-lg hover:shadow-cyan-400/30 transition-all duration-300 transform hover:-translate-y-1">
+            <button  onClick={() => {
+              window.open('https://forms.gle/W15XosJ5qzrWvwKG8', '_blank');
+            }}className="bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-4 px-12 rounded-full text-xl shadow-lg hover:shadow-cyan-400/30 transition-all duration-300 transform hover:-translate-y-1">
               REGISTER NOW
             </button>
           </div>

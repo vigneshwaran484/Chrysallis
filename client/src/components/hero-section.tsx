@@ -59,7 +59,7 @@ export default function HeroSection() {
           <Button 
             onClick={() => {
               scrollToSection('registration');
-              window.open('https://forms.gle/8z5N32ZfnqpbKF5v6', '_blank');
+              window.open('https://forms.gle/W15XosJ5qzrWvwKG8', '_blank');
             }}
             className="bg-cyan-400 hover:bg-cyan-500 text-purple-900 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
             size="lg"
