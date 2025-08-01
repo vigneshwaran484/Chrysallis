@@ -67,7 +67,7 @@ export default function EventCard({ event }: EventCardProps) {
           <Button 
             onClick={() => {
             scrollToRegistration();
-            window.open('https://forms.gle/8z5N32ZfnqpbKF5v6', '_blank');
+            window.open('https://forms.gle/W15XosJ5qzrWvwKG8', '_blank');
   }}
             className="purple-900 text-white hover:purple-800 flex-1"
           >
