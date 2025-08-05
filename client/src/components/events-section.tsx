@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import EventCard from "@/components/event-card";
 import { events, type Event } from "@/data/events";
 
-// Countdown Timer styled like reference image
+// CountdownTimer Component with elegant white theme
 function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -38,8 +38,8 @@ function CountdownTimer() {
   }, []);
 
   return (
-    <div className="bg-[#0f172a] text-center py-10 rounded-xl mb-10 shadow-lg">
-      <h3 className="text-3xl font-bold text-white mb-8">Event Countdown</h3>
+    <div className="bg-white text-center py-10 rounded-xl mb-10 shadow-lg border border-gray-200">
+      <h3 className="text-3xl font-extrabold text-purple-900 mb-8">Event Countdown</h3>
       <div className="flex justify-center flex-wrap gap-6">
         {[
           { label: "Days", value: timeLeft.days },
@@ -49,10 +49,10 @@ function CountdownTimer() {
         ].map((unit) => (
           <div
             key={unit.label}
-            className="bg-gradient-to-br from-slate-800 to-slate-700 px-8 py-6 rounded-lg w-36 text-white"
+            className="bg-white border border-gray-300 px-8 py-6 rounded-lg w-36 shadow-sm"
           >
-            <p className="text-4xl font-extrabold text-yellow-400">{unit.value}</p>
-            <p className="text-lg mt-2 text-gray-300">{unit.label}</p>
+            <p className="text-4xl font-extrabold text-yellow-500">{unit.value}</p>
+            <p className="text-sm mt-2 text-gray-500 uppercase tracking-wide">{unit.label}</p>
           </div>
         ))}
       </div>
@@ -73,10 +73,10 @@ export default function EventsSection() {
     <section id="events" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Countdown Timer */}
+        {/* Countdown */}
         <CountdownTimer />
 
-        {/* Section Heading */}
+        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-purple-900 mb-4">
             Literary Competitions
@@ -86,7 +86,7 @@ export default function EventsSection() {
           </p>
         </div>
 
-        {/* Event Filter Buttons */}
+        {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <Button
             onClick={() => setActiveFilter("all")}
@@ -134,7 +134,7 @@ export default function EventsSection() {
           </Button>
         </div>
 
-        {/* Events Grid */}
+        {/* Events List */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredEvents.map((event: Event) => (
             <EventCard key={event.id} event={event} />
