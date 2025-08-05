@@ -28,7 +28,7 @@ export default function Navigation() {
               <div className="text-red-500 font-playfair font-bold text-xl">
                 CHRYSALIS
               </div>
-              <div className="text-sm text-red-800">Literary Symposium</div>
+              <div className="text-sm text-yellow-800">Literary Symposium</div>
             </div>
           </div>
 

@@ -15,7 +15,7 @@ export default function EventInfoSection() {
           </p>
         </div>
 
-        {/* IMPORTANT DATES */}
+         {/* IMPORTANT DATES */}
         <div className="bg-gradient-to-br from-purple-900 to-purple-700 rounded-xl shadow-2xl overflow-hidden mb-16">
           <div className="p-8 text-center">
             <h3 className="text-3xl font-bold text-white mb-2">IMPORTANT DATES</h3>
@@ -53,6 +53,7 @@ export default function EventInfoSection() {
             </button>
           </div>
         </div>
+
 
         {/* BUS ROUTES */}
         <div className="mb-16">

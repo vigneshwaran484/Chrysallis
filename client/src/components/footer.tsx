@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="mb-4">
-              <div className="text-cyan-400 font-playfair font-bold text-2xl">CHRYSALIS 2024</div>
+              <div className="text-cyan-400 font-playfair font-bold text-2xl">CHRYSALIS 2025</div>
               <div className="text-gray-300">A National Level Technical Symposium</div>
             </div>
             <p className="text-gray-400 mb-4">
