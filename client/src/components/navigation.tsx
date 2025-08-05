@@ -25,10 +25,10 @@ export default function Navigation() {
               className="h-16 w-auto mr-3"
             />
             <div className="flex-shrink-0">
-              <div className="text-yellow-800 font-playfair font-bold text-xl">
+              <div className="text-grey-800 font-playfair font-bold text-xl">
                 CHRYSALIS
               </div>
-              <div className="text-sm text-yellow-800">Literary Symposium</div>
+              <div className="text-sm text-grey-800">Literary Symposium</div>
             </div>
           </div>
 
