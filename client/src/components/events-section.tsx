@@ -1,8 +1,56 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import EventCard from "@/components/event-card";
 import { events, type Event } from "@/data/events";
 
+// CountdownTimer Component
+function CountdownTimer() {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    const targetDate = new Date('September 13, 2025 00:00:00').getTime();
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance > 0) {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        setTimeLeft({ days, hours, minutes, seconds });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
+    };
+
+    updateCountdown();
+    const timer = setInterval(updateCountdown, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="text-center mb-10">
+      <h3 className="text-2xl font-bold text-purple-900 mb-2">Countdown to Event</h3>
+      <div className="flex justify-center space-x-6 text-purple-800 text-xl font-medium">
+        <div><span className="font-bold text-3xl">{timeLeft.days}</span> days</div>
+        <div><span className="font-bold text-3xl">{timeLeft.hours}</span> hrs</div>
+        <div><span className="font-bold text-3xl">{timeLeft.minutes}</span> mins</div>
+        <div><span className="font-bold text-3xl">{timeLeft.seconds}</span> secs</div>
+      </div>
+    </div>
+  );
+}
+
+// EventsSection Component
 export default function EventsSection() {
   const [activeFilter, setActiveFilter] = useState<string>("all");
 
@@ -10,9 +58,15 @@ export default function EventsSection() {
     if (activeFilter === "all") return true;
     return event.category === activeFilter;
   });
+
   return (
     <section id="events" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Countdown Timer */}
+        <CountdownTimer />
+
+        {/* Section Heading */}
         <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-purple-900 mb-4">
             Literary Competitions
@@ -22,7 +76,7 @@ export default function EventsSection() {
           </p>
         </div>
 
-        {/* Event Filter */}
+        {/* Event Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <Button
             onClick={() => setActiveFilter("all")}
@@ -72,7 +126,7 @@ export default function EventsSection() {
 
         {/* Events Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredEvents.map((event) => (
+          {filteredEvents.map((event: Event) => (
             <EventCard key={event.id} event={event} />
           ))}
         </div>
