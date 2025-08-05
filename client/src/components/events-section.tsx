@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import EventCard from "@/components/event-card";
 import { events, type Event } from "@/data/events";
 
-// CountdownTimer Component
+// Countdown Timer styled like reference image
 function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -38,19 +38,29 @@ function CountdownTimer() {
   }, []);
 
   return (
-    <div className="text-center mb-10">
-      <h3 className="text-2xl font-bold text-purple-900 mb-2">Countdown to Event</h3>
-      <div className="flex justify-center space-x-6 text-purple-800 text-xl font-medium">
-        <div><span className="font-bold text-3xl">{timeLeft.days}</span> days</div>
-        <div><span className="font-bold text-3xl">{timeLeft.hours}</span> hrs</div>
-        <div><span className="font-bold text-3xl">{timeLeft.minutes}</span> mins</div>
-        <div><span className="font-bold text-3xl">{timeLeft.seconds}</span> secs</div>
+    <div className="bg-[#0f172a] text-center py-10 rounded-xl mb-10 shadow-lg">
+      <h3 className="text-3xl font-bold text-white mb-8">Event Countdown</h3>
+      <div className="flex justify-center flex-wrap gap-6">
+        {[
+          { label: "Days", value: timeLeft.days },
+          { label: "Hours", value: timeLeft.hours },
+          { label: "Minutes", value: timeLeft.minutes },
+          { label: "Seconds", value: timeLeft.seconds },
+        ].map((unit) => (
+          <div
+            key={unit.label}
+            className="bg-gradient-to-br from-slate-800 to-slate-700 px-8 py-6 rounded-lg w-36 text-white"
+          >
+            <p className="text-4xl font-extrabold text-yellow-400">{unit.value}</p>
+            <p className="text-lg mt-2 text-gray-300">{unit.label}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
 }
 
-// EventsSection Component
+// Main Events Section
 export default function EventsSection() {
   const [activeFilter, setActiveFilter] = useState<string>("all");
 
@@ -62,7 +72,7 @@ export default function EventsSection() {
   return (
     <section id="events" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Countdown Timer */}
         <CountdownTimer />
 
