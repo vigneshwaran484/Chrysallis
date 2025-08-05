@@ -25,7 +25,7 @@ export default function Navigation() {
               className="h-16 w-auto mr-3"
             />
             <div className="flex-shrink-0">
-              <div className="text-red-500 font-playfair font-bold text-xl">
+              <div className="text-yellow-800 font-playfair font-bold text-xl">
                 CHRYSALIS
               </div>
               <div className="text-sm text-yellow-800">Literary Symposium</div>
@@ -37,17 +37,17 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-4">
               <button 
                 onClick={() => scrollToSection('home')}
-                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors text-red-800">Home</button>
+                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors text-yellow-800">Home</button>
               <button 
                 onClick={() => scrollToSection('events')}
-                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors text-red-800"
+                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors text-yellow-800"
               >
                 Events
               </button>
              
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors text-red-800"
+                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors text-yellow-800"
               >
                 Contact
               </button>
