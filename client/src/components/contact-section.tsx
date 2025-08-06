@@ -127,10 +127,8 @@ export default function EventInfoSection() {
           </div>
         </div>
 
-        {/* CONTACT DETAILS */}
         
-              </div>
-            </div>
+    
 
             {/* Coordinators */}
             <div className="mb-8">
