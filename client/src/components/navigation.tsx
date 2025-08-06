@@ -1,110 +1,38 @@
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Phone } from "lucide-react";
 
-export default function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
-    }
-  };
-
+export default function ScheduleSection() {
   return (
-    <nav className="fixed w-full top-0 z-50 bg-Mauve-900 text-white shadow-lg bg-[rgba(203, 203, 191, 0.93)]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-gray-500 ">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            <img 
-              src="/attached_assets/final.png" 
-              alt="CHRYSALIS Logo" 
-              className="h-16 w-auto mr-3"
-            />
-            <div className="flex-shrink-0">
-              <div className="text-purple-800 font-playfair font-bold text-xl">
-                CHRYSALIS
+    <div id="contact"> {/* 👈 This enables smooth scroll */}
+      <h2 className="font-playfair text-3xl text-purple-900 mb-8 text-center border-b-2 border-cyan-400 pb-2 inline-block">
+        CONTACT DETAILS
+      </h2>
+      <div className="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto">
+        {/* Organizers */}
+        <div className="mb-8">
+          <div className="flex items-start mb-4">
+            <div className="bg-cyan-100 rounded-full p-3 mr-4">
+              <Phone className="text-cyan-600 w-6 h-6" />
+            </div>
+            <div className="flex-1">
+              <h4 className="font-semibold text-2xl text-purple-900 mb-4">Organizers</h4>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <p className="font-bold text-purple-900">Mr. B.Nithin</p>
+                  <p className="text-lg text-cyan-600 font-semibold">9840353000</p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <p className="font-bold text-purple-900">Mr. S.Yashvanth</p>
+                  <p className="text-lg text-cyan-600 font-semibold">9344480767</p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <p className="font-bold text-purple-900">Mr. C.Vigneshwaran</p>
+                  <p className="text-lg text-cyan-600 font-semibold">7845864838</p>
+                </div>
               </div>
-              <div className="text-sm text-purple-800">Literary Symposium</div>
             </div>
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              <button 
-                onClick={() => scrollToSection('home')}
-                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors text-yellow-800">Home</button>
-              <button 
-                onClick={() => scrollToSection('events')}
-                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors text-yellow-800"
-              >
-                Events
-              </button>
-             
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors text-yellow-800"
-              >
-                Contact
-              </button>
-            </div>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-300 hover:text-white"
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
           </div>
         </div>
       </div>
-
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-purple-800">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <button 
-              onClick={() => scrollToSection('home')}
-              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-cyan-400 transition-colors"
-            >
-              Home
-            </button>
-            <button 
-              onClick={() => scrollToSection('events')}
-              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-cyan-400 transition-colors"
-            >
-              Events
-            </button>
-            <button 
-              onClick={() => scrollToSection('schedule')}
-              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-cyan-400 transition-colors"
-            >
-              Schedule
-            </button>
-            <button 
-              onClick={() => scrollToSection('registration')}
-              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-cyan-400 transition-colors"
-            >
-              Register
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-cyan-400 transition-colors"
-            >
-              Contact
-            </button>
-          </div>
-        </div>
-      )}
-    </nav>
+    </div>
   );
 }
