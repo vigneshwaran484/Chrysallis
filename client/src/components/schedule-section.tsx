@@ -1,8 +1,8 @@
-import { Phone } from "lucide-react"; // Ensure you import Phone icon
+import { Phone } from "lucide-react";
 
 export default function ScheduleSection() {
   return (
-    <div>
+    <div id="contact"> {/* This is the scroll target */}
       <h2 className="font-playfair text-3xl text-purple-900 mb-8 text-center border-b-2 border-cyan-400 pb-2 inline-block">
         CONTACT DETAILS
       </h2>
