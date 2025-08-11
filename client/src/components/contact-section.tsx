@@ -145,7 +145,7 @@ export default function EventInfoSection() {
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="bg-gray-50 p-4 rounded-lg">
                       <p className="font-bold text-purple-900">Mr. B.Nithin</p>
-                      <p className="text-lg text-cyan-600 font-semibold">tel: 9840353000</p>
+                      <p className="text-lg text-cyan-600 font-semibold">9840353000</p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-lg">
                       <p className="font-bold text-purple-900">Mr. S.Yashvanth</p>
